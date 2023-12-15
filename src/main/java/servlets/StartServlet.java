@@ -8,6 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.stream.Collectors;
 
+/**
+ * Аннотация @WebServlet подсказывает Tomcat, по какому пути обрабатывать запросы.
+ * Например, если наш сервлет называется simpleservlet, то путь запроса пользователя будет:
+ * http://localhost:8080/simpleservlet/start
+ */
 @WebServlet(name = "myServlet", urlPatterns = "/start")
 public class StartServlet extends HttpServlet {
 
